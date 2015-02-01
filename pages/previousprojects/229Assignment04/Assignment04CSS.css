@@ -1,0 +1,161 @@
+﻿body {
+    background-color:#81DAF5;
+    font-family:Arial, sans-serif;
+}
+.label{
+    font-size:18pt;
+    font-weight:bolder;
+    color:white;
+    font-family:Verdana,sans-serif;
+}
+#title{
+    font-weight:bolder;
+    color:white;
+    font-family:Verdana,sans-serif;
+}
+#scoreboard{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+#renderCanvas{
+    cursor: none;
+	box-shadow: 0 0 20px 5px #555;
+}
+#gameCanvas
+{
+    border:2px solid black;
+}
+.reset {
+	-moz-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	box-shadow:inset 0px 1px 0px 0px #cae3fc;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0;
+	border:1px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:20px;
+	width:130px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #287ace;
+}
+.reset:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}
+.reset:active {
+	position:relative;
+	top:1px;
+}
+#cssmenu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font: 67.5% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: auto;
+}
+#cssmenu ul {
+  background: #333333;
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu li {
+  float: left;
+  padding: 0px;
+}
+#cssmenu li a {
+  background: #333333 url('seperator.png') bottom right no-repeat;
+  display: block;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0px;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+#cssmenu > ul > li > a {
+  color: #cccccc;
+}
+#cssmenu ul ul a {
+  color: #cccccc;
+}
+#cssmenu li > a:hover,
+#cssmenu ul li:hover > a {
+  background: #23aadb url('hover.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+#cssmenu li ul {
+  background: #333333;
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 225px;
+  z-index: 200;
+
+}
+#cssmenu li:hover ul {
+  display: block;
+}
+#cssmenu li li {
+  background: url('sub_sep.png') bottom left no-repeat;
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
+}
+#cssmenu li:hover li a {
+  background: none;
+}
+#cssmenu li ul a {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+#cssmenu li ul a:hover,
+#cssmenu li ul li:hover > a {
+  background: #23aadb url('hover_sub.png') center left no-repeat;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+#cssmenu p {
+  clear: left;
+}
+

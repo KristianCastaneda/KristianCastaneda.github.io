@@ -1,0 +1,502 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/app.css" rel="stylesheet" />
+    <link href="assignment3CSS.css" rel="stylesheet" type="text/css" />
+    <title>Registration Form</title> 
+
+    <script type="text/javascript">
+        function firstvalid() {
+            var letteronly = /^[a-zA-Z]+$/
+            if (registration.firstname.value == "") {
+                firstmessage.innerHTML = "<font color='red'> * First name cannot be left blank</font>";
+                registration.firstname.style.borderColor = 'red';
+            }
+            else{
+                if (registration.firstname.value.match(new RegExp(letteronly))) {
+                    firstmessage.innerHTML = "";
+                    registration.firstname.style.borderColor = 'black';
+                }       
+                else {
+                    firstmessage.innerHTML = "<font color='red'> Invalid Characters</font>";
+                    registration.firstname.style.borderColor = 'red';
+                }
+            }
+        }
+        function lastvalid() {
+            var letteronly = /^[a-zA-Z]+$/
+            if (registration.lastname.value == "") {
+                lastmessage.innerHTML = "<font color='red'> * Last name cannot be left blank</font>";
+                registration.lastname.style.borderColor = 'red';
+            }
+            else{
+                if (registration.lastname.value.match(new RegExp(letteronly))) {
+                    lastmessage.innerHTML = "";
+                    registration.lastname.style.borderColor = 'black';
+                }
+                else {
+                    lastmessage.innerHTML = "<font color='red'> Invalid Characters</font>";
+                    registration.lastname.style.borderColor = 'red';
+                }
+            }
+        }
+        function addressvalid() {
+            var alphanumeric = /^[0-9 a-zA-Z .]+$/;
+            if (registration.address.value == "") {
+                addressmessage.innerHTML = "<font color='red'> * Address cannot be left blank</font>";
+                registration.address.style.borderColor = 'red';
+            }
+            else{
+                if (registration.address.value.match(new RegExp(alphanumeric))) {
+                    addressmessage.innerHTML = "";
+                    registration.address.style.borderColor = 'black';
+                }
+                else {
+                    addressmessage.innerHTML = "<font color='red'> Invalid Characters</font>";
+                    registration.address.style.borderColor = 'red';
+                }
+            }
+        }
+        function cityvalid() {
+            var letteronly = /^[a-zA-Z]+$/
+            if (registration.city.value == "") {
+                citymessage.innerHTML = "<font color='red'> * City cannot be left blank</font>";
+                registration.city.style.borderColor = 'red';
+            }
+            else{
+                if (registration.lastname.value.match(new RegExp(letteronly))) {
+                    citymessage.innerHTML = "";
+                    registration.city.style.borderColor = 'black';
+                }
+                else {
+                    citymessage.innerHTML = "<font color='red'> Invalid Characters</font>";
+                    registration.city.style.borderColor = 'red';
+                }
+            }
+        }
+        function postalvalid() {
+            var postalformat = /^[ABCDEFGHIJKLMNOPQRSTUVWXYZ]\d[ABCDEFGHIJKLMNOPQRSTUVWXYZ]( )?\d[ABCDEFGHIJKLMNOPQRSTUVWXYZ]\d$/i;
+            if (registration.postal.value == "") {
+                postalmessage.innerHTML = "<font color='red'> * Postal Code cannot be left blank</font>";
+                registration.postal.style.borderColor = 'red';
+            }
+            else{
+                if (registration.postal.value.match(new RegExp(postalformat))) {
+                    postalmessage.innerHTML = "";
+                    registration.postal.style.borderColor = 'black';
+                }
+                else {
+                    postalmessage.innerHTML = "<font color='red'> Invalid Characters</font>";
+                    registration.postal.style.borderColor = 'red';
+                }
+            }
+        }
+        function provincevalid() {
+            if (registration.province.value !== "none") {
+                provincemessage.innerHTML = "";
+                registration.province.style.borderColor = 'black';
+            }
+            else {
+                provincemessage.innerHTML = "<font color='red'> * Please choose a province</font>";
+                registration.province.style.borderColor = 'red';
+            }
+        }
+        function agevalid() {
+            var numberonly = /^[0-9]+$/;
+            if (registration.age.value == "") {
+                agemessage.innerHTML = "<font color='red'> * Age cannot be left blank</font>";
+                registration.age.style.borderColor = 'red';
+            }
+            else{
+                if (registration.age.value.match(new RegExp(numberonly))) {
+                    agemessage.innerHTML = "";
+                    registration.age.style.borderColor = 'black';
+                    if (registration.age.value < 18) {
+                        agemessage.innerHTML = "<font color='red'> You have to be 18 years or older to register</font>";
+                        registration.age.style.borderColor = 'red';
+                    }
+                    else {
+                        agemessage.innerHTML = "";
+                        registration.age.style.borderColor = 'black';
+                    }
+                }
+                else {
+                    agemessage.innerHTML = "<font color='red'> Invalid Characters</font>";
+                    registration.age.style.borderColor = 'red';
+                }
+            }
+        }
+        function passwordvalid() {
+            var passvalue = registration.password.value;
+            var passformat = /^.*(?=.{6,})(?=.*[a-zA-Z])(?=.*\d).*$/;
+            if (passvalue == "") {
+                passwordmessage.innerHTML = "<font color='red'> * Password cannot be left blank</font>";
+                registration.password.style.borderColor = 'red';
+            }
+            else{
+                if ((passvalue.match(new RegExp(passformat)))) {
+                    passwordmessage.innerHTML = "";
+                    registration.password.style.borderColor = 'black';
+                }
+                else {
+                    passwordmessage.innerHTML = "<font color='red'> Must be atleast 6 characters,contain atleast 1 letter and 1 number</font>";
+                    registration.password.style.borderColor = 'red';
+                }
+            }
+        }
+        function confirmvalid() {
+            if (registration.confirm.value == "") {
+                confirmmessage.innerHTML = "<font color='red'> * Please rewrite your password</font>";
+                registration.confirm.style.borderColor = 'red';
+            }
+            else{
+                if (registration.confirm.value == registration.password.value) {
+                    confirmmessage.innerHTML = "";
+                    registration.confirm.style.borderColor = 'black';
+                }
+                else {
+                    confirmmessage.innerHTML = "<font color='red'> Password mismatch</font>";
+                    registration.confirm.style.borderColor = 'red';
+                } 
+            }
+        }
+        function emailvalid() {
+            var emailformat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([com\co\.\in])+$/;
+            if (registration.email.value == "") {
+                emailmessage.innerHTML = "<font color='red'> * Email Address cannot be left blank</font>";
+                registration.email.style.borderColor = 'red';
+            }
+            else{
+                if (registration.email.value.match(new RegExp(emailformat))) {
+                    emailmessage.innerHTML = "";
+                    registration.email.style.borderColor = 'black';
+                }
+                else {
+                    emailmessage.innerHTML = "<font color='red'> Invalid Email</font>";
+                    registration.email.style.borderColor = 'red';
+                }
+            }
+        }
+        function checksubmit() {
+            var checkfirst = firstmessage.innerHTML;
+            var checklast = lastmessage.innerHTML;
+            var checkaddress = addressmessage.innerHTML;
+            var checkcity = citymessage.innerHTML;
+            var checkpostal = postalmessage.innerHTML;
+            var checkprovince = provincemessage.innerHTML;
+            var checkage = agemessage.innerHTML;
+            var checkpassword = passwordmessage.innerHTML;
+            var checkconfirm = confirmmessage.innerHTML;
+            var checkemail = emailmessage.innerHTML;
+
+            if (firstvalid()) {
+            }
+            else if (lastvalid()) {
+            }
+            else if (addressvalid()) {
+            }
+            else if (cityvalid()) {
+            }
+            else if (postalvalid()) {
+            }
+            else if (provincevalid()) {
+            }
+            else if (agevalid()) {
+            }
+            else if (passwordvalid()) {
+            }
+            else if (confirmvalid()) {
+            }
+            else if (emailvalid()) {
+            }
+
+            else if (registration.firstname.value == "" && registration.lastname.value == "" && registration.address.value == "" && registration.city.value == "" && registration.postal.value == "" && registration.province.value == "none" && registration.age.value == "" && registration.password.value == "" && registration.confirm.value == "" && registration.email.value == "") {
+                var display = document.getElementById('display');
+                display.innerHTML = "Failed to register. Please fix the highlighted fields"
+                alert("Failed to Register! Please fix the highlighted fields");
+                return false;
+            }
+            else if (checkfirst ==""  && checklast=="" && checkaddress=="" && checkcity=="" && checkpostal=="" && checkprovince=="" && checkage=="" && checkpassword=="" && checkconfirm=="" && checkemail=="") {
+                var display = document.getElementById('display');
+                display.innerHTML = "Registration Successful!";
+                alert("Registration Successful! You're record has been saved, Thank you");
+                return true;
+            }
+            else {
+                var display = document.getElementById('display');
+                display.innerHTML = "Failed to register. Please fix the highlighted fields";
+                alert("Failed to Register! Please fix the highlighted fields");
+                return false;
+            }
+        }
+
+    </script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="header_resize">
+      <div class="logo">
+        <h1><a href="index.html">Registration<span>&nbsp;Form</span></a></h1>
+        <small>
+            <table id="DateTime">
+                <tr>
+                    <td>
+                        <script>
+                            var today = new Date();
+                            var day = today.getDate();
+                            var month = today.getMonth();
+                            var year = today.getFullYear();
+
+                            switch (parseInt(month)) {
+                                case 0:
+                                    month = "January"
+                                    break
+                                case 1:
+                                    month = "February"
+                                    break
+                                case 2:
+                                    month = "March"
+                                    break
+                                case 3:
+                                    month = "April"
+                                    break
+                                case 4:
+                                    month = "May"
+                                    break
+                                case 5:
+                                    month = "June"
+                                    break
+                                case 6:
+                                    month = "July"
+                                    break
+                                case 7:
+                                    month = "August"
+                                    break
+                                case 8:
+                                    month = "September"
+                                    break
+                                case 9:
+                                    month = "October"
+                                    break
+                                case 10:
+                                    month = "November"
+                                    break
+                                case 11:
+                                    month = "December"
+                            }
+
+                            if (day == 1 || day == 31) {
+                                day = day + "st"
+                            }
+                            else if (day == 2 || day == 22) {
+                                day = day + "nd"
+                            }
+                            else if (day == 3 || day == 23) {
+                                day = day + "rd"
+                            }
+                            else {
+                                day = day + "th";
+                            }
+
+                            document.writeln("<b>" + month + " " + day + "," + year + "</b>");
+
+                        </script>
+                    </td>
+                    <td>
+                        <div id="TimeScript">
+                            <script type="text/javascript">
+                                function clock() {
+                                    var digital = new Date();
+                                    var hours = digital.getHours();
+                                    var minutes = digital.getMinutes();
+                                    var seconds = digital.getSeconds();
+                                    var amOrPm = "AM";
+                                    if (hours > 11) amOrPm = "PM";
+                                    if (hours > 12) hours = hours - 12;
+                                    if (hours == 0) hours = 12;
+                                    if (minutes <= 9) minutes = "0" + minutes;
+                                    if (seconds <= 9) seconds = "0" + seconds;
+                                    dispTime = '<b>' + hours + ":" + minutes + ":" + seconds + " " + amOrPm + '</b>';
+                                    document.getElementById('TimeScript').innerHTML = dispTime;
+                                    setTimeout("clock()", 1000);
+                                }
+                                window.onload = clock;
+                            </script>
+                         </div>
+                      </td>
+                </tr>
+            </table>
+        </small>
+      </div>
+        <div id='cssmenu'>
+            <ul>
+                <li><a href='../Index.html'><span>Home</span></a></li>
+                <li class='has-sub'><a href='#'><span>229 Assignments</span></a>
+                <ul>
+                        <li><a href='../229Assignment02/Assignment2.htm'><span>Assignment 2</span></a></li>
+                        <li><a href='../229Assignment03/assignment3.html'><span>Assignment 3</span></a></li>
+                        <li><a href='#'><span>Assignment 4</span></a></li>
+                        <li><a href='#'><span>Assignment 5</span></a></li>
+                </ul>
+                </li>
+                <li class='has-sub'><a href='#'><span>213 Assignments</span></a>
+                <ul>
+                        <li><a href='../Assignment02/Assignment2.htm'><span>Assignment 2</span></a></li>
+                        <li><a href='../Assignment03/Assignment3.htm'><span>Assignment 3</span></a></li>
+                        <li><a href='.../Assignment04/Assignment4.htm'><span>Assignment 4</span></a></li>
+                        <li><a href='../Assignment05/Assignment5.xml'><span>Assignment 5</span></a></li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+      </div>
+      <!--#region Breadcrumb-->
+      <div class="container" style="width:500px;float:left;">
+          <ol class="breadcrumb">
+              <li><a href="../../../index.html">Home</a></li>
+              <li><a href="../../projects.html">Projects</a></li>
+              <li class="active">Registration Form</li>
+          </ol>
+      </div>
+      <!--#endregion-->
+      <div class="clr"></div>
+    </div>
+</div>
+
+<div class="hbg">
+</div>
+<center>
+    <div class="content">
+        <form id="registration" name="registration">
+            <div id="formformat">
+                <div id="formtitle">  
+                    <h3>Member Registration</h3> 
+                </div> 
+                <table id="formtable">  
+                    <tr>
+                        <td  colspan="2">
+                            <div id="display"></div>
+                            <h4 style="color:red;">Please complete all the fields below:</h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+                            <label>First Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="firstname" id="firstname" placeholder="First Name" onblur="firstvalid()" required="required" size="15"/><span id="firstmessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">   
+                            <label>Last Name: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="lastname" id="lastname" placeholder="Last Name" onblur="lastvalid()" required="required" size="15"/><span id="lastmessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">           
+                            <label>Address:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="address" id="address" placeholder="Address"  onblur="addressvalid()" required="required" size="30"/><span id="addressmessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+                            <label>City:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="city" id="city" placeholder="City" onblur="cityvalid()" required="required" size="15"/><span id="citymessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+                            <label>Postal Code: </label>
+                        </td>
+                        <td>
+                            <input type="text" name="postal" id="postal" placeholder="A0A 0A0" onblur="postalvalid()" required="required" size="7"/><span id="postalmessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+                            <label>Province: </label>
+                            </td>
+                        <td>
+                            <select id="province" name="province" onblur="provincevalid()" required="required" >
+                                    <option value="none">Select a Province</option>
+                                    <option value="AB">AB</option>
+                                    <option value="ON">ON</option>
+                                    <option value="QC">QC</option>
+                                    <option value="BC">BC</option>
+                                    <option value="MN">MN</option>
+                                    <option value="SK">SK</option>
+                            </select><span id="provincemessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+                            <label>Age:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="age" id="age" placeholder="Age" onblur="agevalid()" style="width:30px" required="required" size="3"/><span id="agemessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+                            <label>Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="password" placeholder="Password"id="password" onblur="passwordvalid()" required="required"/><span id="passwordmessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+                            <label>Confirm:</label>
+                        </td>
+                        <td>
+                            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password"onblur="confirmvalid()" required="required"/><span id="confirmmessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+                            <label>Email:</label>
+                        </td>
+                        <td>
+                            <input type="text" name="email" id="email" placeholder="Your Email address"onblur="emailvalid()" required="required" size="25"/><span id="emailmessage"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h5>Before clicking "Register" make sure all fields are filled in and no fields are highlighted</h5>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="colwidth">
+
+                            <input type="button" value="Register" onclick="checksubmit()"  id="submit" class="buttonstyle" name="submit"/>
+                        </td>
+                        <td>
+                            <input type="reset" value="Clear" id="clear" class="buttonstyle" onclick="window.location.reload()" name="clear"/>
+                        </td>
+                    </tr>
+                </table>             
+                <br />
+            </div>
+        </form>
+    </div>
+</center>
+<footer>
+    <center>
+        <h6 id="copyright">
+            &copy;Copyright Kristian Castaneda - 300730698 - COMP229 - Advanced Web Application Development - Assignment 03 - All Rights Reserved
+        </h6>
+    </center>
+</footer>
+</body>
+
+</html>

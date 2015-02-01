@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This document contains data on Nutritonal Facts for 3 different food items -->
+<?xml-stylesheet type="text/css" href="NutritionCSS.css" ?> 
+<nutritionalfacts>
+<title>Nutritional Facts</title>
+<productfact>
+<product>
+	<productinfo>
+	<producttitle>Nutrition Facts</producttitle>
+	<serving>
+		<size>Serving Size</size>
+		<servingvalue>225 g</servingvalue>
+	</serving>
+	<caloriecount>
+		<amount>Amount Per Serving</amount>
+		<calories>Calories</calories>
+		<calorievalue>200</calorievalue>
+		<caloriefat>Calories from Fat 6</caloriefat>
+	</caloriecount>
+	<dailyvalueinfo>
+		<dailyvalue>% Daily Value *</dailyvalue>
+		<totalfat>
+			<total>
+				<header>Total Fat</header>
+				<value>1g</value>
+				<percent>1&#160;%</percent>
+			</total>
+			<saturatedfat>
+				<name>Saturated Fat</name>
+				<value>0g</value>
+				<percent>1&#160;%</percent>
+			</saturatedfat>
+			<transfat>
+				<name>Trans Fat</name>
+				<value></value>
+				<percent>&#160;</percent>
+			</transfat>
+		<cholesterol>
+			<header>Cholesterol</header>
+			<value>0mg</value>
+			<percent>0&#160;%</percent>
+		</cholesterol>
+		<sodium><header>Sodium</header>
+			<value>2mg</value>
+			<percent>0&#160;%</percent>
+		</sodium>
+		</totalfat>
+		<totalcarbohydrate>
+			<total>
+				<header>Total Carbohydrate</header>
+				<value>51g</value>
+				<percent>17%</percent>
+			</total>
+			<fiber>
+				<name>Dietary Fiber</name>
+				<value>6g</value>
+				<percent>23%</percent>
+			</fiber>
+			<sugar>
+				<name>Sugars</name>
+				<value>28g</value>
+				<percent>&#160;</percent>
+			</sugar>
+		<protein><header>Protein</header>
+			<value>13g</value>
+			<percent>&#160;</percent>
+		</protein>
+		</totalcarbohydrate>
+	</dailyvalueinfo>
+<vitandmin>
+	<vitamins>
+		<vitamin>
+			<vitaminone>Vitamin A</vitaminone>
+			<percent>3&#160;%</percent>
+		</vitamin>
+		<vitamin>
+			<vitamintwo>*&#160;Vitamin C</vitamintwo>
+			<percent>33%</percent>
+		</vitamin>
+	</vitamins>
+	<minerals>
+		<mineral>
+			<mineralone>Calcium</mineralone>
+			<percent>1&#160;%</percent>
+		</mineral>
+		<mineral>
+			<mineraltwo>*&#160;Iron</mineraltwo>
+			<percent>3&#160;%</percent>
+		</mineral>
+	</minerals>
+</vitandmin>
+<message>
+	<![CDATA[
+		*Percent Daily Values are based on a 2,000 calorie diet. 
+		 Your daily values may be higher or lower depending on 
+		 your calorie needs.
+	]]>
+</message>
+</productinfo>
+</product>
+<product>
+<productinfo>
+	<producttitle>Nutrition Facts</producttitle>
+	<serving>
+		<size>Serving Size</size>
+		<servingvalue>237 g</servingvalue>
+	</serving>
+	<caloriecount>
+		<amount>Amount Per Serving</amount>
+		<calories>Calories</calories>
+		<calorievalue>500</calorievalue>
+		<caloriefat>Calories from Fat 8</caloriefat>
+	</caloriecount>
+	<dailyvalueinfo>
+		<dailyvalue>% Daily Value *</dailyvalue>
+		<totalfat>
+			<total>
+				<header>Total Fat</header>
+				<value>2g</value>
+				<percent>2&#160;%</percent>
+			</total>
+			<saturatedfat>
+				<name>Saturated Fat</name>
+				<value>1g</value>
+				<percent>1&#160;%</percent>
+			</saturatedfat>
+			<transfat>
+				<name>Trans Fat</name>
+				<value>0g</value>
+				<percent>&#160;</percent>
+			</transfat>
+		<cholesterol>
+			<header>Cholesterol</header>
+			<value>0mg</value>
+			<percent>0&#160;%</percent>
+		</cholesterol>
+		<sodium><header>Sodium</header>
+			<value>3mg</value>
+			<percent>0&#160;%</percent>
+		</sodium>
+		</totalfat>
+		<totalcarbohydrate>
+			<total>
+				<header>Total Carbohydrate</header>
+				<value>62g</value>
+				<percent>18%</percent>
+			</total>
+			<fiber>
+				<name>Dietary Fiber</name>
+				<value>9g</value>
+				<percent>25%</percent>
+			</fiber>
+			<sugar>
+				<name>Sugars</name>
+				<value>40g</value>
+				<percent>&#160;</percent>
+			</sugar>
+		<protein><header>Protein</header>
+			<value>15g</value>
+			<percent>&#160;</percent>
+		</protein>
+		</totalcarbohydrate>
+	</dailyvalueinfo>
+<vitandmin>
+	<vitamins>
+		<vitamin>
+			<vitaminone>Vitamin A</vitaminone>
+			<percent>7&#160;%</percent>
+		</vitamin>
+		<vitamin>
+			<vitamintwo>*&#160;Vitamin C</vitamintwo>
+			<percent>13%</percent>
+		</vitamin>
+	</vitamins>
+	<minerals>
+		<mineral>
+			<mineralone>Calcium</mineralone>
+			<percent>4&#160;%</percent>
+		</mineral>
+		<mineral>
+			<mineraltwo>*&#160;Iron</mineraltwo>
+			<percent>2&#160;%</percent>
+		</mineral>
+	</minerals>
+</vitandmin>
+<message>
+	<![CDATA[
+		*Percent Daily Values are based on a 2,000 calorie diet. 
+		 Your daily values may be higher or lower depending on 
+		 your calorie needs.
+	]]>
+</message>
+</productinfo>
+</product>
+
+<product>
+<productinfo>
+	<producttitle>Nutrition Facts</producttitle>
+	<serving>
+		<size>Serving Size</size>
+		<servingvalue>436 g</servingvalue>
+	</serving>
+	<caloriecount>
+		<amount>Amount Per Serving</amount>
+		<calories>Calories</calories>
+		<calorievalue>110</calorievalue>
+		<caloriefat>Calories from Fat 3</caloriefat>
+	</caloriecount>
+	<dailyvalueinfo>
+		<dailyvalue>% Daily Value *</dailyvalue>
+		<totalfat>
+			<total>
+				<header>Total Fat</header>
+				<value>5g</value>
+				<percent>4&#160;%</percent>
+			</total>
+			<saturatedfat>
+				<name>Saturated Fat</name>
+				<value>3g</value>
+				<percent>2&#160;%</percent>
+			</saturatedfat>
+			<transfat>
+				<name>Trans Fat</name>
+				<value>2g</value>
+				<percent>&#160;</percent>
+			</transfat>
+		<cholesterol>
+			<header>Cholesterol</header>
+			<value>12mg</value>
+			<percent>3&#160;%</percent>
+		</cholesterol>
+		<sodium><header>Sodium</header>
+			<value>1mg</value>
+			<percent>0&#160;%</percent>
+		</sodium>
+		</totalfat>
+		<totalcarbohydrate>
+			<total>
+				<header>Total Carbohydrate</header>
+				<value>65g</value>
+				<percent>20%</percent>
+			</total>
+			<fiber>
+				<name>Dietary Fiber</name>
+				<value>3g</value>
+				<percent>21%</percent>
+			</fiber>
+			<sugar>
+				<name>Sugars</name>
+				<value>28g</value>
+				<percent>&#160;</percent>
+			</sugar>
+		<protein><header>Protein</header>
+			<value>17g</value>
+			<percent>&#160;</percent>
+		</protein>
+		</totalcarbohydrate>
+	</dailyvalueinfo>
+<vitandmin>
+	<vitamins>
+		<vitamin>
+			<vitaminone>Vitamin A</vitaminone>
+			<percent>2&#160;%</percent>
+		</vitamin>
+		<vitamin>
+			<vitamintwo>*&#160;Vitamin C</vitamintwo>
+			<percent>23%</percent>
+		</vitamin>
+	</vitamins>
+	<minerals>
+		<mineral>
+			<mineralone>Calcium</mineralone>
+			<percent>4&#160;%</percent>
+		</mineral>
+		<mineral>
+			<mineraltwo>*&#160;Iron</mineraltwo>
+			<percent>6&#160;%</percent>
+		</mineral>
+	</minerals>
+</vitandmin>
+<message>
+	<![CDATA[
+		*Percent Daily Values are based on a 2,000 calorie diet. 
+		 Your daily values may be higher or lower depending on 
+		 your calorie needs.
+	]]>
+</message>
+</productinfo>
+</product>
+
+
+
+</productfact>
+
+
+</nutritionalfacts>

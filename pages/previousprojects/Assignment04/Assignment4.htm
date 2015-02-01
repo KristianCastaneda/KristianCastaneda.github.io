@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>CE Evaluation Form</title>
+<link href="CSS4.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<span id="logobanner">	
+	<a href="http://www.centennialcollege.ca/parttime" target="_blank">
+ 		<img title="Click to go to Continuing Education Website"alt="logo" src="images/logo.jpg" id="logo"/>
+ 	</a>	
+		<img alt="banner" src="images/banner.jpg" id="banner"/>
+</span>
+    <div class="container" style="width:500px;">
+        <a href="../../../index.html">Home/</a>
+        <a href="../../projects.html">Projects/</a>
+        Evaluation Form
+    </div>
+	<h1>Continuing Education Course/Instructor Evaluation</h1>
+	<a href="../index.html">
+		<img id="home" title="Click to go back to home page"  src="images/home.png" />
+	</a>
+<div>
+<hr id="line"/>
+<form action="http://webdevbasics.net/scripts/demo.php" method="post">
+<label id="Course_label">Course Name/Code:</label> 
+
+<input name="Course" id="Course_text" type="text" class="textbox" required="required"/>
+<br/>
+<span style="text-align:center;">
+	<label name="Semester">Semester:</label>
+	<input name="Season" type="radio" checked="true" />Fall
+	<input name="Season" type="radio" />Winter
+	<input name="Season" type="radio" />Spring/Summer
+	<label id="Year">Year: </label><input class="textbox" name="Year" type="text"  required="required"/>
+</span>
+<br/>
+<label id="Instructor">Instructor: </label><input class="textbox" name="Instructor" type="text" required="required" />
+<hr id="line" />
+	<fieldset name="Instructor_Group">
+		<legend><strong>Instructor</strong></legend>
+		<br/>
+		<br/>
+		<div>
+			How would you rate you're instructor's:
+			<br/>
+			<br/>		
+			<label id="knowledge">1.) <strong>knowledge</strong> of subject?</label>
+			<br/>
+			<br/>
+				<input name="knowledge" type="radio" value="Excellent"/>Excellent
+				<input name="knowledge" type="radio" value="Good" />Good
+				<input name="knowledge" type="radio" value="Fair" checked="true"/>Fair
+				<input name="knowledge" type="radio" value="Not Safisfactory" />Not Satifactory
+			<br/>
+			<br />
+			<label id="helpfulness">2.) <strong>helpfulness</strong>?</label>
+			<br/>
+			<br/>
+
+				<input name="helpfulness" type="radio" value="Excellent"/>Excellent
+				<input name="helpfulness" type="radio" value="Good"/>Good
+				<input name="helpfulness" type="radio" value="Fair" checked="true"/>Fair
+				<input name="helpfulness" type="radio" value="Not Safisfactory" />Not Satifactory
+			<br/>
+			<br/>
+
+			<label id="courtesy">3.) <strong>courtesy and respect</strong> for all students?</label>
+			<br/>
+			<br/>
+				<input name="courtesy" type="radio" value="Excellent"/>Excellent
+				<input name="courtesy" type="radio" value="Good"/>Good
+				<input name="courtesy" type="radio" value="Fair" checked="true"/>Fair
+				<input name="courtesy" type="radio" value="Not Safisfactory" />Not Satifactory
+			<br/>
+			<br/>
+			<label id="communication">4.) <strong>communication</strong> skills?</label>
+			<br/>
+			<br/>
+				<input name="communication" type="radio" value="Excellent"/>Excellent
+				<input name="communication" type="radio" value="Good"/>Good
+				<input name="communication" type="radio" value="Fair"  checked="true"/>Fair
+				<input name="communication" type="radio" value="Not Safisfactory"/>Not Satifactory
+			<br/>
+			<br/>
+			<label id="overall">5.) overall <strong>performance</strong>?</label>
+			<br/>
+			<br/>
+				<input name="overall" type="radio" value="Excellent"/>Excellent
+				<input name="overall" type="radio" value="Good"/>Good
+				<input name="overall" type="radio" value="Fair" checked="true"//>Fair
+				<input name="overall" type="radio" value="Not Safisfactory" />Not Satifactory
+			<br/>
+			<br/>
+		</div>
+	</fieldset>
+	<fieldset name="Course_Group">
+		<legend><strong>Course</strong></legend>
+		<br/>
+		<br/>
+		<div>
+			<label id="materials">6.) How would you rate the <strong>course material</strong>?</label>
+			<br/>
+			<br/>
+				<input name="material" type="radio" value="Excellent"/>Excellent
+				<input name="material" type="radio" value="Good" />Good
+				<input name="material" type="radio" value="Fair" checked="true"/>Fair
+				<input name="material" type="radio" value="Not Safisfactory"  />Not Satifactory
+			<br/>
+			<br/>
+			<label id="expectations">7.) How much did this course meet your <strong>expectations</strong>?</label>
+			<br/>
+			<br/>
+				<input name="expectations" type="radio" value="Excellent"/>Excellent
+				<input name="expectations" type="radio" value="Good" />Good
+				<input name="expectations" type="radio" value="Fair" checked="true"/>Fair
+				<input name="expectations" type="radio" value="Not Safisfactory"  />Not Satifactory
+			<br/>
+			<br/>
+			<label id="overall_rate">8.) How would you rate this course <strong>(overall)</strong>?</label>
+			<br/>
+			<br/>
+				<input name="overall_rate" type="radio" value="Excellent"/>Excellent
+				<input name="overall_rate" type="radio" value="Good" />Good
+				<input name="overall_rate" type="radio" value="Fair" checked="true"/>Fair
+				<input name="overall_rate" type="radio" value="Not Safisfactory" />Not Satifactory
+			<br/>
+			<br/>
+		</div>				
+	</fieldset>
+	<fieldset name="General_Info_Group">
+		<legend><strong>General Information</strong></legend>
+		<br/>
+		<br/>
+		<div>
+			<label id="outline">9.) Was the  <strong>course outline</strong> reviewed/explained at the beginning of the course?</label>
+			<br/>
+			<br/>
+				<input name="outline" type="radio" value="Yes"/>Yes
+				<input name="outline" type="radio" value="No" />No
+				<input name="outline" type="radio" value="Not Sure" checked="true"/>Not Sure
+			<br/>
+			<br/>
+			<label id="recommend">10.) Would you <strong>recommend</strong> this course to a friend?</label>
+			<br/>
+			<br/>
+				<input name="recommend" type="radio" value="Yes"/>Yes
+				<input name="recommend" type="radio" value="No" />No
+				<input name="recommend" type="radio" value="Not Sure" checked="true"/>Not Sure
+			<br/>
+			<br/>
+		</div>
+	</fieldset>
+	<fieldset name="Comment_Group">
+		<legend><strong>Any Other Comments</strong></legend>
+		<br/>
+		<br/>
+		<div>
+			<label id="best_thing">11.) What is the <strong>best thing</strong> about this course?</label>
+			<br/>
+			<br/>
+			<textarea name="best_thing"></textarea>
+			<br/>
+			<br/>
+			<label id="improve">12.) How could we <strong>improve</strong> this course?</label>
+			<br/>
+			<br/>
+			<textarea name="improve"></textarea>
+			<br/>
+			<br/>
+			<label id="other">13.) Other:</label>
+			<br/>
+			<br/>
+			<textarea name="other"></textarea>
+			<br/>
+			<br/>
+		</div>
+	</fieldset>
+	<input name="Submit" type="submit" value="Submit" /><input name="Reset" type="reset" value="Reset" />
+<p>
+	Thank you! We pay attentioin to your feedback!
+</p>
+<p>
+	Web: <a title="Click to go to Continuing Education Website"href="http://www.centennialcollege.ca/parttime" target="_blank">
+			http://www.centennialcollege.ca/parttime
+		 </a>
+</p>
+<p>
+	Email: <a title="Click to contact Continuing Education" href="mailto:ce@centennialollege.ca">
+				ce@centennialcollege.ca
+		   </a>
+</p>
+
+</form>
+</div>
+<hr />
+<h6>&copy;Copyright Kristian Castaneda - 300730698 - COMP213-062 - Assignment04</h6>
+<hr />
+
+</body>
+
+</html>

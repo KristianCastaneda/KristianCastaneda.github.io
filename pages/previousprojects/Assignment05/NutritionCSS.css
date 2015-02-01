@@ -1,0 +1,200 @@
+﻿nutritionalfacts {
+	display:block;
+	min-width:100%;
+	background-color:#66FF99
+}
+title{
+	display:block;
+	border-top:thick black solid;
+	border-bottom:thick black solid;
+	font-size:36pt;
+	width:100%;
+	text-align:center;
+	font-weight:bolder;
+	background-color:#93DCFF
+}
+productfact{
+	display:table;
+	width:80%;
+	margin:0px 10% 0px 10%;
+}
+product{
+	width:30%;
+	display:table-cell;
+	padding:50px 10px 50px 10px;
+	margin-left:30px;
+	margin-top:30px;
+}
+productinfo{
+	display:block;
+	border:medium black solid;
+	margin:30p 30px 30p 30px;
+
+}
+producttitle{
+	display:block;
+	font-size:xx-large;
+	font-weight:bold;
+	text-align:center;
+	background-color:#FFFFDF;
+}
+serving{
+	display:block;
+	background-color:#C0C0C0;
+	border-bottom:thick black solid;
+}
+size{
+	display:inline;
+}
+servingvalue{
+	display:inline;
+}
+caloriecount{
+	display:block;
+	border-bottom:medium black solid;
+	background-color:#D8B0FF;
+}
+amount {
+	display:block;
+	font-size:small;
+	border-bottom:thin black solid;
+
+}
+calories{
+	display:inline;
+	font-weight:bold;
+	margin-right:5px;
+
+}
+calorievalue{
+	display:inline;
+	margin-right:20px;
+}
+caloriefat{
+	text-align:right;
+	float:right;
+}
+dailyvalueinfo{
+	display:block;
+}
+dailyvalue{
+	display:block;
+	text-align:right;
+	background-color:#FFCB5E;
+	border-left:thick transparent solid;
+}
+totalfat{
+	display:block;
+	border-bottom:thin black solid;
+	background-color:#50CB53;
+
+}
+total{
+	display:block;
+	border-bottom:thin black solid;
+	border-top:thin black solid;
+
+
+}
+value{
+	display:inline;
+	margin-left:5px;
+}
+percent{
+	float:right;
+	background-color:#FFCB5E;
+	display:table-cell;
+	width:35px;
+}
+filler{
+	color:#FFCB5E;
+
+
+}
+saturatedfat{
+	display:block;
+	border-bottom:thin black solid;
+	margin-left:10px
+}
+transfat{
+	display:block;
+	border-bottom:thin black solid;
+	margin-left:10px
+}
+cholesterol{
+	display:block;
+	border-bottom:thin black solid;
+}
+name{
+	font-style:italic;
+}
+sodium{
+	display:block;
+	border-bottom:thin black solid;
+}
+totalcarbohydrate{
+	display:block;
+	border-bottom:thin black solid;
+	background-color:#7DBEFF;
+
+
+}
+fiber{
+	display:block;
+	border-bottom:thin black solid;
+	margin-left:10px;
+}
+sugar{
+	display:block;
+	border-bottom:thin black solid;
+	margin-left:10px
+}
+protein{
+	display:block;
+	border-bottom:thick black solid;
+	background-color:#FFFF9D;
+}
+message{
+	display:block;
+	background-color:#B9FFFF;
+}
+header{
+	font-weight:bold;
+}
+vitandmin{
+	display:table;
+	border-bottom:thick black solid;
+	width:100%;
+	background-color:#FFAAAA;
+}
+vitamin{
+	display:table-cell;
+	width:45%;
+	border-bottom:thin black solid;
+}
+mineral{
+	display:table-cell;
+	width:45%;
+}
+
+vitamins{
+	display:table-row;
+	border-bottom:thin black solid;
+}
+minerals{
+	display:table-row;
+}
+split{
+}
+vitaminone{
+	float:left;
+}
+mineralone{
+	float:left;
+}
+vitamintwo{
+	float:left;
+}
+mineraltwo{
+	float:left;
+}

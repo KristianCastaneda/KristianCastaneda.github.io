@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bubble Sniper</title>
+    <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/app.css" rel="stylesheet" />
+     <link href="Assignment04CSS.css" rel="stylesheet" type="text/css" />
+</head>
+<body  style="">
+
+<div>
+    <img style="width:100%; height:200px;" src="images/banner.jpg" />
+</div>
+<div id='cssmenu'>
+<ul>
+   <li><a href='../Index.html'><span>Home</span></a></li>
+        <li class='has-sub'><a href='#'><span>229 Assignments</span></a>
+            <ul>
+                    <li><a href='../229Assignment02/Assignment2.htm'><span>Assignment 2</span></a></li>
+                    <li><a href='../229Assignment03/assignment3.html'><span>Assignment 3</span></a></li>
+                    <li><a href='../229Assignment04/Assignment04.html'><span>Assignment 4</span></a></li>
+                    <li><a href='#'><span>Assignment 5</span></a></li>
+            </ul>
+        </li>
+        <li class='has-sub'><a href='#'><span>213 Assignments</span></a>
+            <ul>
+                    <li><a href='../Assignment02/Assignment02.html'><span>Assignment 2</span></a></li>
+                    <li><a href='../Assignment03/Assignment3.htm'><span>Assignment 3</span></a></li>
+                    <li><a href='../Assignment04/Assignment4.htm'><span>Assignment 4</span></a></li>
+                    <li><a href='../Assignment05/Assignment5.xml'><span>Assignment 5</span></a></li>
+            </ul>
+       </li>
+</ul>
+</div>
+    <!--#region Breadcrumb-->
+    <div class="container" style="width:500px;float:left;">
+        <ol class="breadcrumb">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../projects.html">Projects</a></li>
+            <li class="active">Bubble Sniper</li>
+        </ol>
+    </div>
+    <!--#endregion-->
+     
+
+<center>
+<div id="gameCanvas" style="background-image:url(images/canvasBackground.jpg)">
+    
+<div id="scoreboard">
+    <table>
+        <tr> 
+            <td colspan="3" style="text-align:center">
+                <h2 id="title">Shoot that Bubble</h2>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 500px;">
+                <div class="label">Speed: <span id="speed">&nbsp;</span></div>
+                <div class="label">Bubbles popped: <span id="hit">&nbsp;</span></div>    
+            </td>
+            <td>
+                 <input class="reset" type="button" value="Reset Speed" onclick="bubbleMvsp = 2000; render();" />
+            </td>
+            <td>
+                 <input class="reset"type="button" value="Reset Score" onclick="bubblesHit = 0; render();" />
+            </td>
+        </tr>
+    </table>
+</div>
+    <script src="Assignment04Canvas.js"></script>
+</div>
+</center>
+<footer>
+    <center>
+        <h6 id="copyright">
+            &copy;Copyright Kristian Castaneda - 300730698 - COMP229 - Advanced Web Application Development - Assignment 04 - All Rights Reserved
+        </h6>
+    </center>
+</footer>
+</body>
+</html>

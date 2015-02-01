@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Midterm Practical Exam</title>
+    <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/app.css" rel="stylesheet" />
+    <link href="300730698Styles.css" rel="stylesheet" type="text/css" />
+
+    <!--Kristian Castaneda 300730698-->
+
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 232px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+<div id="content" align="center">
+    <img width="100%" height="200px"src="images/banner.jpg" align="center" />
+
+    <!--#region Breadcrumb-->
+    <div class="container" style="width:500px;float:left;">
+        <ol class="breadcrumb">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../projects.html">Projects</a></li>
+            <li class="active">Airplane Booking</li>
+        </ol>
+    </div>
+    <!--#endregion-->
+
+  
+    
+    <h3> Book Your Flight</h3>
+<div id="div1"  onsubmit="alert('We will search for matching flights - - Do you want to continue?')"> 
+    <form id="flightbooking">      
+        <table>
+            <tr>
+                <td class="auto-style1"><label class="labels">
+                    <input name="optRoundTrip" type="radio"  checked="checked" value="Round" />Round Trip
+                    <input name="optOneWay" id="optOne" type="radio" value="One" />One way
+                </label></td>
+
+            </tr>
+
+            <tr>
+                <td class="auto-style1">
+                  <label class="labels">From:
+                    <select name="From" id="From"  required="required">
+                        <option value="">--no location selected--</option>
+                        <option>Downtown Airport</option>
+                        <option>Pearson Airport</option>
+                    </select>
+                </label>
+                </td>
+
+                <td>
+                <label class="labels">Day: 
+                    <select name="day" id="day"  required="required"> 
+                        <option value="">_ _</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    </label>
+                </td>
+                
+                <td>
+                    <label class="labels"> Month:
+                    <select name="month" id="month"  required="required">
+                        <option value="">_ _</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                         </select>
+                    </label>
+                </td>
+
+                <td>
+                <label class="labels">Year:
+                    <select name="year" id="year" required="required">
+                        <option selected="selected" value="">_ _</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        
+                    </select>
+                </label>
+                </td>
+
+                <td>
+                    <label class="labels">Adults:</label>
+                    <select name="Adults" id="Adults" required="required">
+                        <option selected="selected" value="">0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+
+                </td>
+
+            </tr>
+
+            <tr>
+
+              
+               <td class="auto-style1">
+                  <label class="labels">To:
+                    <select name="To" id="To" required="required">
+                        <option value="">--no location selected--</option>
+                        <option>Los Angeles</option>
+                        <option>Chicago</option>
+                        <option>Boston</option>
+                    </select>
+                </label>
+                </td>
+
+                <td>
+                <label class="labels">Day: 
+                    <select name="returnDay" id="returnDay" required="required"> 
+                        <option value="">_ _</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    </label>
+                </td>
+                
+                <td>
+                    <label class="labels"> Month:
+                    <select name="returnMonth" id="returnMonth" required="required">
+                        <option value="">_ _</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                         </select>
+                    </label>
+                </td>
+
+                <td>
+                <label class="labels">Year:
+                    <select name="returnYear" id="returnYear" required="required">
+                        <option value="">_ _</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                    </select>
+                </label>
+                </td>
+
+                  <td>
+                    <label class="labels">Children(2-11):
+                    <select name="Children" id="Children">
+                        <option selected="selected" >0</option>
+                        <option value="1">1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                    </select>
+                        </label>
+
+                </td>
+
+            </tr>
+
+             <tr>
+                <td class="auto-style1"><label class="labels">
+                    <input name="optClass" type="radio" value="econ" checked="checked"/>Economy
+                    <input name="optClass" type="radio" value="bus" />Business
+                </label></td>
+
+                 <td>
+                     <input onclick="Verify()" value="Book a Flight!" id="Submit" type="submit" /> 
+                    
+
+                 </td>
+
+            </tr>                
+            </table>  
+        <script type="text/javascript">
+            function Verify() {
+                if (flightbooking.From.value == "") {
+                    alert("Please enter a destination");
+                    flightbooking.From.style.backgroundColor = 'aqua';
+                    flightbooking.From.style.borderColor = 'navy';
+
+
+                }
+
+
+                if (flightbooking.day.value == "" && flightbooking.month.value == "" && flightbooking.year.value == "") {
+                    alert("please enter a date");
+                    flightbooking.day.style.backgroundColor = 'aqua';
+                    flightbooking.day.style.borderColor = 'navy';
+                    flightbooking.month.style.backgroundColor = 'aqua';
+                    flightbooking.month.style.borderColor = 'navy';
+                    flightbooking.year.style.backgroundColor = 'aqua';
+                    flightbooking.year.style.borderColor = 'navy';
+
+
+                }
+
+
+                if (flightbooking.Adults.value == "") {
+                    alert("Must have an adult");
+                    frmCustomer.Adults.style.backgroundColor = 'aqua';
+                    frmCustomer.Adults.style.borderColor = 'navy';
+
+                }
+
+                if (document.getElementById('optOneWay').checked) {
+                    alert("You will not need to fill out the return flight information!");
+                    document.getElementById("To").disabled = true;
+                    document.getElementById("returnMonth").disabled = true;
+                    document.getElementById("returnDay").disabled = true;
+                    document.getElementById("returnYear").disabled = true;
+                    return false;
+                }
+
+
+                if (flightbooking.To.value == "") {
+                    alert("Please enter destination");
+                    flightbooking.To.style.backgroundColor = 'aqua';
+                    flightbooking.To.style.borderColor = 'navy';
+
+
+                }
+                if (flightbooking.returnDay.value == "" && flightbooking.returnMonth.value == "" && flightbooking.returnYear.value == "") {
+                    alert("Please enter return date");
+                    flightbooking.returnDay.style.backgroundColor = 'aqua';
+                    flightbooking.returnDay.style.borderColor = 'navy';
+                    flightbooking.returnMonth.style.backgroundColor = 'aqua';
+                    flightbooking.returnMonth.style.borderColor = 'navy';
+                    flightbooking.returnYear.style.backgroundColor = 'aqua';
+                    flightbooking.returnYear.style.borderColor = 'navy';
+                }
+
+                if (flightbooking.Children.value == "1") {
+                    alert("One child under the age of six flies for free");
+                }
+            }
+        </script>
+    </form>
+    </div>
+
+    <h6>&copy;Copyright Kristian Castaneda - 300730698 - Midterm Practical - Fall 2013</h6>
+</div>
+</body>
+</html>

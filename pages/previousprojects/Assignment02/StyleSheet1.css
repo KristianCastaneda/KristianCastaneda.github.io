@@ -1,0 +1,27 @@
+﻿a {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: underline overline;
+	background-color: #94F075;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+		background-color: #FFFF99;
+}
+h1 {
+text-shadow: 5px 5px 5px #00AE00;
+	color: #00AE00;
+
+	font-family: "Goudy Stout";
+	color: #006600;
+	font-weight: bold;
+}
+h3 {
+    text-shadow: 5px 5px 5px #00FF00;
+	color: #00AE00;
+}
+body {
+	color: #000000;
+}

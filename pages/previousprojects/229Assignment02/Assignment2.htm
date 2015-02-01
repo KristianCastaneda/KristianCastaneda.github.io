@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Lexar USB Flash Drives</title>
+    <link href="../../../css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../../../css/app.css" rel="stylesheet" />
+    <link href="Assignment2CSS.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+    function explain(value) {
+        if (document.getElementById("Size").value == "8") {
+            document.getElementById("Price").value = "$16.99"
+        }
+        if (document.getElementById("Size").value == "16") {
+            document.getElementById("Price").value = "$27.99"
+        }
+        if (document.getElementById("Size").value == "32") {
+            document.getElementById("Price").value = "$49.99"
+        }
+        if (document.getElementById("Size").value == "64") {
+            document.getElementById("Price").value = "$99.99"
+        }
+        if (document.getElementById("Size").value == "null") {
+            document.getElementById("Price").value = "$0.00"
+        }
+    }
+</script>
+<script type="text/javascript">
+        function FavBrand() {
+            var brand = prompt("What is your favorite USB brand?","none");
+            if (brand != null) {
+                var like = prompt("On a scale of 1 to 100, how much do you like it?", "80");
+                var result = "";
+                if (like != null && like != 0) {
+                    for (i = 0; i < like; i++) {
+                        result += brand + "  ";
+                    }
+                    document.getElementById("FavBrand").innerHTML = "<font style='color:red;font-size:17px;font-weight:bolder;'>" + result + " <br> </font>";
+                }
+            }
+    
+        }
+</script>
+<script>
+ function functs() {
+        clock();
+        FavBrand();
+
+    }
+</script>
+<script>
+    function myClick() {
+        window.alert("Thank you for your purchase!\n Have a great day!");
+    }
+
+</script>
+</head>
+<body>
+<div id='cssmenu'>
+<ul>
+   <li><a href='../Index.html'><span>Home</span></a></li>
+   <li><a href='#'><span>229 Assignments</span></a>
+      <ul>
+         <li><a href='Assignment2.htm'><span>Assignment 2</span></a></li>
+         <li><a href='../229Assignment03/assignment3.html'><span>Assignment 3</span></a></li>
+         <li><a href='#'><span>Assignment 4</span></a></li>
+         <li><a href='#'><span>Assignment 5</span></a></li>
+      </ul>
+   </li>
+    <li><a href='#'><span>213 Assignments</span></a>
+      <ul>
+         <li><a href="../Assignment02/Assignment02.html">Assignment 2</a></li>
+            <li><a href="../Assignment03/Assignment3.htm">Assignment 3</a></li>
+            <li><a href="../Assignment04/Assignment4.htm">Assignment 4</a></li>
+            <li><a href="../Assignment05/Assignment5.xml">Assignment 5</a></li>
+      </ul>
+   </li>
+    <li><a href='#'><span>Centennial</span></a>
+      <ul>
+            <li><a href="http://www.centennialcollege.ca/" target="_blank"> Official Site</a></li>
+            <li><a href="https://my.centennialcollege.ca/cp/home/displaylogin" target="_blank">myCentennial</a></li>
+            <li><a href="https://e.centennialcollege.ca/"target="_blank">eCentennial</a></li>
+            <li><a href="http://library.centennialcollege.ca/"target="_blank">Library</a></li>
+            <li><a href="http://www.ccsai.ca/"target="_blank">Student Association</a></li>
+            <li><a href="http://www.centennialcollege.ca/bookstore"target="_blank">Book Stores</a></li>
+        </ul>
+   </li>
+    <li></li>
+   <li><a href='http://www.lexar.com/about'target="_blank"><span>About Lexar</span></a></li>
+   <li class='last'><a href='http://www.lexar.com/about/contact-us'target="_blank"><span>Contact Lexar</span></a></li>
+</ul>
+</div>
+
+<header>
+        <img id="banner" alt="banner" title="Banner" src="images/banner.png"/>
+</header>
+    <!--#region Breadcrumb-->
+    <div class="container" style="width:500px;float:left;">
+        <ol class="breadcrumb">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../projects.html">Projects</a></li>
+            <li class="active">Lexar USB</li>
+        </ol>
+    </div>
+    <!--#endregion-->
+<table id="DateTime">
+       <tr>
+           <td>
+               <script>
+                   var today = new Date();
+                   var day = today.getDate();
+                   var month = today.getMonth();
+                   var year = today.getFullYear();
+
+                   switch (parseInt(month)) {
+                       case 0:
+                           month = "January"
+                           break
+                       case 1:
+                           month = "February"
+                           break
+                       case 2:
+                           month = "March"
+                           break
+                       case 3:
+                           month = "April"
+                           break
+                       case 4:
+                           month = "May"
+                           break
+                       case 5:
+                           month = "June"
+                           break
+                       case 6:
+                           month = "July"
+                           break
+                       case 7:
+                           month = "August"
+                           break
+                       case 8:
+                           month = "September"
+                           break
+                       case 9:
+                           month = "October"
+                           break
+                       case 10:
+                           month = "November"
+                           break
+                       case 11:
+                           month = "December"
+                   }
+
+                   if (day == 1 || day == 31) {
+                       day = day + "st"
+                   }
+                   else if (day == 2 || day == 22) {
+                       day = day + "nd"
+                   }
+                   else if (day == 3 || day == 23) {
+                       day = day + "rd"
+                   }
+                   else {
+                       day = day + "th";
+                   }
+
+                   document.writeln("<b>Current Date: " + month + " " + day + "," + year + "</b>");
+
+               </script>
+           </td>
+           <td>
+               <div id="TimeScript">
+                   <script type="text/javascript">
+                       function clock() {
+                           var digital = new Date();
+                           var hours = digital.getHours();
+                           var minutes = digital.getMinutes();
+                           var seconds = digital.getSeconds();
+                           var amOrPm = "AM";
+                           if (hours > 11) amOrPm = "PM";
+                           if (hours > 12) hours = hours - 12;
+                           if (hours == 0) hours = 12;
+                           if (minutes <= 9) minutes = "0" + minutes;
+                           if (seconds <= 9) seconds = "0" + seconds;
+                           dispTime = '<b>Current Time: ' + hours + ":" + minutes + ":" + seconds + " " + amOrPm + '</b>';
+                           document.getElementById('TimeScript').innerHTML = dispTime;
+                           setTimeout("clock()", 1000);
+                       }
+                       window.onload = functs;
+                   </script>
+                </div>
+             </td>
+       </tr>
+</table>
+ 
+
+   
+<div id="ProdInfo" align="center">
+<table id="tableProd">
+
+        <tr>
+            <td id="ProdPic" rowspan="2">
+                <img title="ProductImage"id="productPic" src="images/LexDefault.png"/>
+            </td>   
+        </tr>
+        <tr>
+            <td>
+                <h3>Product Description</h3>
+                <h4>Lexar USB Flash Drive</h4>
+                <p id="ProdDesc">
+                    One of the smallest USB 3.0 drives available, the affordable, high-performance Lexar® JumpDrive® S23 
+                    USB 3.0 flash drive allows you to quickly transfer files with speeds up to 4x faster than standard 
+                    JumpDrive USB 2.0 drives. The drive features a slim, retractable design, comes in a range of colors, 
+                    and is available in capacities from 8GB-64GB.
+                    The Lexar USB 3.0 JumpDrive S23 delivers blazing fast performance with data transfer speeds up to 8X 
+                    faster than traditional USB 2.0 drives. It reads data at speeds of up to 100Mbps, and writes at speeds 
+                    of up to 55Mbps.  
+                </p>
+            </td>
+        </tr>
+            <td colspan="2">
+            <form>
+                <select id="Color" onchange="document.getElementById('productPic').src=this.options[this.selectedIndex].value"; name="Color">
+                    <option selected="selected" value="images/LexDefault.png">-- Please Select a Color --</option>
+                    <option value="images/LexGreen.png">Green</option>
+                    <option value="images/LexBlue.png">Blue</option>
+                    <option value="images/LexOrange.png">Orange</option>
+                    <option value="images/LexPurple.png">Purple</option>       
+                 </select>
+                 <select id="Size" name="Size"  onchange="explain(this)">
+                    <option selected="selected" value="null">-- Please Select Memory Size --</option>
+                    <option value="8">8 GB</option>
+                    <option value="16">16 GB</option>
+                    <option value="32">32 GB</option>
+                    <option value="64">64 GB</option>
+                 </select>
+            </form>
+            </td>
+            <tr>
+            <td>
+                <br/>
+            <form>
+                <input id="Price" value="$0.00" disabled="disabled"/>
+                X
+                <select id="Quantity" name="Quantity">
+                    <option selected="selected" value="null">-- Quantity --</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </form>
+                </td>
+            <td>
+            <form>
+                <input class="Cart" id="Cart" type="submit" value="Add to Cart" name="btnSubmit" onclick="myClick()" />
+            </form>
+            </td>
+            </tr>
+        </table>
+<div id="divBrand">
+    <h3 id="brandHead"><em>Your favorite brand is: </em><br /></h3>
+    <label id="FavBrand">
+          <script type="text/javascript">
+              window.onload = functs;
+          </script>
+    </label>
+</div>
+<footer>
+    <h6 id="copyright">
+        &copy;Copyright Kristian Castaneda - 300730698 - COMP229 - Advanced Web Application Development - Assignment 02 - All Rights Reserved
+    </h6>
+</footer>
+</body>
+</html>
+    

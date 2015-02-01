@@ -1,0 +1,19 @@
+﻿body {
+	background-color: #FF9191;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 1024px;
+}
+table{
+	background-color:#D7FF84;
+		
+}
+tr:nth-child(odd){
+	background-color:#C7C7C7;
+}
+img {
+	border:none;
+}
+a:hover {
+	text-decoration: underline overline;
+	text-decoration: none;
+}

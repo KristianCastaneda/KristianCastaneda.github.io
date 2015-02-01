@@ -1,0 +1,29 @@
+﻿th {
+	color: #000000;
+	font-weight: bold;
+	background-color: #4A78FF;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('images/Background.jpg');
+	color: #C7C7C7;
+	min-width: 1300px;
+}
+h3 {
+	font-weight: bold;
+	color: #FFFFFF;
+	}
+
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #A7A7A7;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline overline;
+	background-color: #3737FF;
+}
+img {
+ 	border:none;
+}
